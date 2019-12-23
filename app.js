@@ -34,7 +34,9 @@ inquirer
             <p>Location: ${res.data.location}</p>
             <p>Github: "${res.data.html_url}"</p>
             <p>I am a junior web developer from Austin, TX. My previous career experience is in the financial industry. My skills include HTML, CSS/Bootstrap, Javascript, jQuery, Node/Express, and MySQL.</p>
-            <p>Github Repositories: ${res.data.repos_url}</p>
+            <p>Github Repositories: ${res.data.public_repos}</p>
+            <p>Followers: ${res.data.followers}</p>
+            <p>Following: ${res.data.following}</p>
             </body>
             </html>`, 
             function(err) {
