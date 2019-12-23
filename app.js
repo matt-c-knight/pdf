@@ -21,12 +21,20 @@ inquirer
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Document</title>
+            <style>
+            img {
+                width: 200px;
+                height: 200px;
+            }
+            </style>
             </head>
             <body>
-            <h1>Resume</h1>
+            <h1>Matt Knight Resume</h1>
             <img src="${res.data.avatar_url}">
             <p>Location: ${res.data.location}</p>
             <p>Github: "${res.data.html_url}"</p>
+            <p>I am a junior web developer from Austin, TX. My previous career experience is in the financial industry. My skills include HTML, CSS/Bootstrap, Javascript, jQuery, Node/Express, and MySQL.</p>
+            <p>Github Repositories: ${res.data.repos_url}</p>
             </body>
             </html>`, 
             function(err) {
